@@ -9,23 +9,23 @@
 /* Begin PBXBuildFile section */
 		EA22A8F2268E3E2100A77108 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA22A8F1268E3E2100A77108 /* AppDelegate.swift */; };
 		EA22A8F4268E3E2100A77108 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA22A8F3268E3E2100A77108 /* SceneDelegate.swift */; };
-		EA22A8F6268E3E2100A77108 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA22A8F5268E3E2100A77108 /* ViewController.swift */; };
 		EA22A8F9268E3E2100A77108 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA22A8F7268E3E2100A77108 /* Main.storyboard */; };
 		EA22A8FC268E3E2100A77108 /* ToDoListCoreData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EA22A8FA268E3E2100A77108 /* ToDoListCoreData.xcdatamodeld */; };
 		EA22A8FE268E3E3000A77108 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA22A8FD268E3E3000A77108 /* Assets.xcassets */; };
 		EA22A901268E3E3000A77108 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA22A8FF268E3E3000A77108 /* LaunchScreen.storyboard */; };
+		EA22A909268E3EEC00A77108 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA22A908268E3EEC00A77108 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EA22A8EE268E3E2100A77108 /* ToDoListCoreData.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoListCoreData.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA22A8F1268E3E2100A77108 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA22A8F3268E3E2100A77108 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EA22A8F5268E3E2100A77108 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA22A8F8268E3E2100A77108 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA22A8FB268E3E2100A77108 /* ToDoListCoreData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ToDoListCoreData.xcdatamodel; sourceTree = "<group>"; };
 		EA22A8FD268E3E3000A77108 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA22A900268E3E3000A77108 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA22A902268E3E3000A77108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA22A908268E3EEC00A77108 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 			children = (
 				EA22A8F1268E3E2100A77108 /* AppDelegate.swift */,
 				EA22A8F3268E3E2100A77108 /* SceneDelegate.swift */,
-				EA22A8F5268E3E2100A77108 /* ViewController.swift */,
+				EA22A908268E3EEC00A77108 /* TableViewController.swift */,
 				EA22A8F7268E3E2100A77108 /* Main.storyboard */,
 				EA22A8FD268E3E3000A77108 /* Assets.xcassets */,
 				EA22A8FF268E3E3000A77108 /* LaunchScreen.storyboard */,
@@ -140,10 +140,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA22A8F6268E3E2100A77108 /* ViewController.swift in Sources */,
 				EA22A8F2268E3E2100A77108 /* AppDelegate.swift in Sources */,
 				EA22A8FC268E3E2100A77108 /* ToDoListCoreData.xcdatamodeld in Sources */,
 				EA22A8F4268E3E2100A77108 /* SceneDelegate.swift in Sources */,
+				EA22A909268E3EEC00A77108 /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
