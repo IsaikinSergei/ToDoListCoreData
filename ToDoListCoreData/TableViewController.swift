@@ -6,10 +6,11 @@
 //
 
 import UIKit
+import CoreData
 
 class TableViewController: UITableViewController {
     
-    var tasks: [String] = []
+    var tasks: [Tasks] = []
 
     @IBAction func plusTasks(_ sender: UIBarButtonItem) {
         
@@ -18,7 +19,7 @@ class TableViewController: UITableViewController {
         let saveTask = UIAlertAction(title: "Сохранить", style: .default) { action in
             let tf = alertController.textFields?.first
             if let newTask = tf?.text {
-                self.tasks.insert(newTask, at: 0)
+                self.saveTask(withTitle: newTask)
                 self.tableView.reloadData()
             }
         }
@@ -31,6 +32,37 @@ class TableViewController: UITableViewController {
         alertController.addAction(cancelAction)
         
         present(alertController, animated: true, completion: nil)
+    }
+    // создаём метод для записи данных в CoreData
+    func saveTask(withTitle title: String) {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        
+        guard let entity = NSEntityDescription.entity(forEntityName: "Tasks", in: context) else { return }
+        
+        let taskObject = Tasks(entity: entity, insertInto: context)
+        taskObject.title = title
+        
+        do {
+            try context.save()
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+    }
+    // создаём метод для получения данных из CoreData
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        
+        let fetchRequest: NSFetchRequest<Tasks> = Tasks.fetchRequest()
+        
+        do {
+            tasks = try context.fetch(fetchRequest)
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
     }
     
     override func viewDidLoad() {
@@ -55,7 +87,8 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
 
-        cell.textLabel?.text = tasks[indexPath.row]
+        let task = tasks[indexPath.row]
+        cell.textLabel?.text = task.title
         
         return cell
     }
