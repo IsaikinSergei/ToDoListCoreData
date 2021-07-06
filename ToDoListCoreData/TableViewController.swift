@@ -45,6 +45,8 @@ class TableViewController: UITableViewController {
         
         do {
             try context.save()
+            // добавляем задачу в массив tasks
+            tasks.append(taskObject)
         } catch let error as NSError {
             print(error.localizedDescription)
         }
