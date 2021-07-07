@@ -31,6 +31,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="ToDoList by Sergei Isaikin" id="en0-PA-gs6">
+                        <barButtonItem key="leftBarButtonItem" systemItem="stop" id="75I-Sg-dn1">
+                            <connections>
+                                <action selector="deleteTasks:" destination="Uda-2i-jTG" id="KX5-Tc-Bir"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="swd-eR-PiL">
                             <connections>
                                 <action selector="plusTasks:" destination="Uda-2i-jTG" id="Gvr-We-foe"/>

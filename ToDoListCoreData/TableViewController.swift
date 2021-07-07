@@ -12,6 +12,29 @@ class TableViewController: UITableViewController {
     
     var tasks: [Tasks] = []
 
+    @IBAction func deleteTasks(_ sender: UIBarButtonItem) {
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        
+        let fetchRequest: NSFetchRequest<Tasks> = Tasks.fetchRequest()
+        
+        //удаляем запись из CoreData
+        if let tasks = try?context.fetch(fetchRequest) {
+            for task in tasks {
+                context.delete(task)
+            }
+        }
+        
+        do {
+            try context.save()
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+        
+        tableView.reloadData()
+    }
+    
     @IBAction func plusTasks(_ sender: UIBarButtonItem) {
         
         let alertController = UIAlertController(title: "Новая задача", message: "Введите задачу", preferredStyle: .alert)
