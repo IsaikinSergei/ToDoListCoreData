@@ -14,6 +14,8 @@
 		EA22A8FE268E3E3000A77108 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA22A8FD268E3E3000A77108 /* Assets.xcassets */; };
 		EA22A901268E3E3000A77108 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA22A8FF268E3E3000A77108 /* LaunchScreen.storyboard */; };
 		EA22A909268E3EEC00A77108 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA22A908268E3EEC00A77108 /* TableViewController.swift */; };
+		EAD75D61269B74B600A62996 /* Снимок экрана 2021-07-11 в 22.47.37.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD75D5F269B74B600A62996 /* Снимок экрана 2021-07-11 в 22.47.37.png */; };
+		EAD75D62269B74B600A62996 /* Снимок экрана 2021-07-11 в 22.48.06.png in Resources */ = {isa = PBXBuildFile; fileRef = EAD75D60269B74B600A62996 /* Снимок экрана 2021-07-11 в 22.48.06.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		EA22A900268E3E3000A77108 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA22A902268E3E3000A77108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EA22A908268E3EEC00A77108 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		EAD75D5F269B74B600A62996 /* Снимок экрана 2021-07-11 в 22.47.37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Снимок экрана 2021-07-11 в 22.47.37.png"; sourceTree = "<group>"; };
+		EAD75D60269B74B600A62996 /* Снимок экрана 2021-07-11 в 22.48.06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Снимок экрана 2021-07-11 в 22.48.06.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +47,7 @@
 			isa = PBXGroup;
 			children = (
 				EA22A8F0268E3E2100A77108 /* ToDoListCoreData */,
+				EAD75D5E269B73FD00A62996 /* Screenshots */,
 				EA22A8EF268E3E2100A77108 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,6 +73,15 @@
 				EA22A8FA268E3E2100A77108 /* ToDoListCoreData.xcdatamodeld */,
 			);
 			path = ToDoListCoreData;
+			sourceTree = "<group>";
+		};
+		EAD75D5E269B73FD00A62996 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				EAD75D5F269B74B600A62996 /* Снимок экрана 2021-07-11 в 22.47.37.png */,
+				EAD75D60269B74B600A62996 /* Снимок экрана 2021-07-11 в 22.48.06.png */,
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,8 +142,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA22A901268E3E3000A77108 /* LaunchScreen.storyboard in Resources */,
+				EAD75D62269B74B600A62996 /* Снимок экрана 2021-07-11 в 22.48.06.png in Resources */,
 				EA22A8FE268E3E3000A77108 /* Assets.xcassets in Resources */,
 				EA22A8F9268E3E2100A77108 /* Main.storyboard in Resources */,
+				EAD75D61269B74B600A62996 /* Снимок экрана 2021-07-11 в 22.47.37.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
